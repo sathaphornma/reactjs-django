@@ -3,9 +3,13 @@ from .models import Hero
 
 class HeroSerializer(serializers.ModelSerializer):
     class Meta:
+        """
         fields = (
             'id',
             'name',
             'description',
+            'avatar',
         )
+        """
         model = Hero
+        fields = '__all__'
